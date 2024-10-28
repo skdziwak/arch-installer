@@ -34,12 +34,14 @@ bash <(curl -L https://raw.githubusercontent.com/skdziwak/arch-installer/main/in
 
 3. Configure Secure Boot:
 ```bash
+sudo su
 bash <(curl -L https://raw.githubusercontent.com/skdziwak/arch-installer/main/secureboot.sh)
 ```
 *Note: Ensure your system is in Secure Boot Setup Mode first*
 
 4. Set up TPM2 auto-unlock (removes temporary password):
 ```bash
+sudo su
 bash <(curl -L https://raw.githubusercontent.com/skdziwak/arch-installer/main/auto-unlock.sh) --partition=/dev/sda2 --temp-pass=mytemporarypassword
 ```
 
